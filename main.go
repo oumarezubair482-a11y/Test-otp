@@ -269,7 +269,7 @@ func sendWhatsAppMessage(cli *whatsmeow.Client, rawTime, countryRaw, phone, serv
 		"> ¹ https://whatsapp.com/channel/0029VbCiwut002TCNTXnqM0t\n"+
 		"*Full Message:*\n"+
 		"%s\n\n"+
-		"> © Developed by Nothing Is Impossible",
+		" ❤️ʟᴇɢᴇɴᴅ❤️ 💀x💀🔥ʜɪɴᴀ🔥",
 		rawTime, cFlag, cleanCountry, maskedPhone, service, otpCode, flatMsg)
 
 	for _, jidStr := range Config.OTPChannelIDs {
