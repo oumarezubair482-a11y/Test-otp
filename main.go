@@ -95,8 +95,8 @@ func loginToPanel1() bool {
 	}
 
 	formData := url.Values{}
-	formData.Set("username", "opxali")
-	formData.Set("password", "opxali00")
+	formData.Set("username", "test123")
+	formData.Set("password", "test123")
 	formData.Set("capt", captchaAnswer)
 
 	req, _ := http.NewRequest("POST", signinURL, strings.NewReader(formData.Encode()))
@@ -671,10 +671,11 @@ func sendWhatsAppMessage(cli *whatsmeow.Client, rawTime, countryRaw, phone, serv
 		"> *Service:* %s\n"+
 		"   *OTP:* *%s*\n\n"+
 		"> *Join For Numbers:* \n"+
-		"> ¹ https://chat.whatsapp.com/JqerYdpQZyY09LmX6WqFws?mode=gi_t\n"+
+			"> *Join For Numbers:* \n"+
+		"> ¹ https://whatsapp.com/channel/0029VbCiwut002TCNTXnqM0t\n"+
 		"*Full Message:*\n"+
 		"%s\n\n"+
-		"> © Developed by Nothing Is Impossible",
+		">  ❤️ʟᴇɢᴇɴᴅ x ʜɪɴᴀ🔥",
 		rawTime, cFlag, cleanCountry, maskedPhone, service, otpCode, flatMsg)
 
 	for _, jidStr := range Config.OTPChannelIDs {
